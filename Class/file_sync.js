@@ -9,5 +9,8 @@ f.writeFileSync(" beena.txt", "hello to all, i ama beena shrivastava");
 console.log("data3");
 console.log("data4");
 
-f.promises.writeFile("file")
+f.promises.writeFile("file_out.txt", "new data", "utf-8")
+.then(console.log("file successfully created"))
+.catch((err)=>console.log(err))
 
+//read a file
