@@ -9,4 +9,5 @@ f.writeFileSync(" beena.txt", "hello to all, i ama beena shrivastava");
 console.log("data3");
 console.log("data4");
 
+f.promises.writeFile("file")
 
