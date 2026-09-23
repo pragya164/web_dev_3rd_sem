@@ -21,5 +21,5 @@ app.post('/student', (req, res)=> {
 });
 
 app.listen(3005, ()=> {
-    console.log("Server running at port 3005");
+    console.log("Server Running at port 3005");
 })
