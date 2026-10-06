@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Product Management</h2>
+
+<input id="name" placeholder="Product Name">
+<input id="price" placeholder="Price">
+<input id="category" placeholder="Category">
+
+<button onclick="addProduct()">Add Product</button>
+<button onclick="showProducts()">Show Products</button>
+
+<h3>Products</h3>
+
+<div id="data"></div>
+
+<script>
+
+async function addProduct() {
+
+    let product = {
+        name: document.getElementById("name").value,
+        price: document.getElementById("price").value,
+        category: document.getElementById("category").value
+    };
+
+    await fetch("/products", {
+        method: "POST",
+        // Remaining code is not visible in the image
+    });
+}
+
+async function showProducts() {
+
+    // Lines 40–51 are not visible in the image
+
+    document.getElementById("data").innerHTML = output;
+}
+
+</script>
+
+</body>
+</html>
